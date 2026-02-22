@@ -26,19 +26,17 @@ const Index = () => {
         if (element) {
           e.preventDefault();
 
-          // Posições com ajuste para não ficar colado no topo (offset de 80px)
           const targetPosition = element.getBoundingClientRect().top + window.scrollY - 80;
           const startPosition = window.scrollY;
           const distance = targetPosition - startPosition;
 
-          // Duração do scroll: no mínimo 2 segundos, no máximo 3.5 segundos dependendo da distância.
-          // Isso garante que o usuário consiga ver a página descendo.
-          const duration = Math.min(Math.max(Math.abs(distance), 2000), 3500);
+          // Duração mais ágil: entre 1.5s e 2.5s
+          const duration = Math.min(Math.max(Math.abs(distance) * 0.5, 1500), 2500);
           let start: number | null = null;
 
-          // Easing Quártico (começa bem suave, acelera no meio e freia suavemente)
-          const easeInOutQuart = (t: number) => {
-            return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+          // Easing Cúbico (mais responsivo no início que o Quártico)
+          const easeInOutCubic = (t: number) => {
+            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
           };
 
           const step = (timestamp: number) => {
@@ -46,7 +44,7 @@ const Index = () => {
             const progress = timestamp - start;
             const percentage = Math.min(progress / duration, 1);
 
-            window.scrollTo(0, startPosition + distance * easeInOutQuart(percentage));
+            window.scrollTo(0, startPosition + distance * easeInOutCubic(percentage));
 
             if (progress < duration) {
               window.requestAnimationFrame(step);
