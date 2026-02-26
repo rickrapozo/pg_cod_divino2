@@ -87,6 +87,9 @@ const PricingSection = () => {
               <img
                 src="/images/mockup-main.webp"
                 alt="Código Divino - Material completo"
+                width="768"
+                height="683"
+                loading="lazy"
                 className="w-full max-w-sm rounded-2xl relative"
                 style={{ boxShadow: "0 20px 60px -10px rgba(0,0,0,0.7), 0 0 40px -10px hsl(43 80% 45% / 0.3)" }}
               />

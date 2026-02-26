@@ -53,6 +53,9 @@ const ForWhoSection = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                  width="400"
+                  height="300"
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(20,12,5,0.75) 0%, transparent 60%)" }} />

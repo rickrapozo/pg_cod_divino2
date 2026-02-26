@@ -58,6 +58,9 @@ const HeroSection = () => {
           <img
             src="/images/mockup-main.webp"
             alt="Código Divino - Material completo"
+            width="768"
+            height="683"
+            fetchPriority="high"
             className="mx-auto w-full max-w-md rounded-2xl shadow-2xl"
             style={{ boxShadow: "0 20px 80px -10px rgba(0,0,0,0.7), 0 0 60px -10px hsl(43 80% 45% / 0.3)" }}
           />

@@ -96,6 +96,9 @@ const BonusSection = () => {
                 <img
                   src={bonus.image}
                   alt={bonus.title}
+                  width="200"
+                  height="280"
+                  loading="lazy"
                   className="w-48 md:w-40 object-contain rounded-xl"
                 />
               </div>

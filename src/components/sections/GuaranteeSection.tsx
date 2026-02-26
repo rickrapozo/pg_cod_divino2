@@ -10,6 +10,9 @@ const GuaranteeSection = () => {
             <img
               src="/images/garantia.png"
               alt="Garantía incondicional de 7 días"
+              width="200"
+              height="200"
+              loading="lazy"
               className="w-40 md:w-48 mx-auto"
             />
           </div>
