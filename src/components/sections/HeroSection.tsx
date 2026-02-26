@@ -71,7 +71,7 @@ const HeroSection = () => {
         {/* CTA Button */}
         <a
           href="#pricing-section"
-          className="btn-cta inline-block px-10 py-5 text-lg md:text-xl animate-pulse-gold cursor-pointer"
+          className="btn-cta inline-block px-10 py-5 text-lg md:text-xl md:animate-pulse-gold cursor-pointer"
         >
           🙏 QUIERO COMPRENDER LA BIBLIA
         </a>

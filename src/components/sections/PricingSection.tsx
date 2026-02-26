@@ -90,6 +90,7 @@ const PricingSection = () => {
                 width="768"
                 height="683"
                 loading="lazy"
+                decoding="async"
                 className="w-full max-w-sm rounded-2xl relative"
                 style={{ boxShadow: "0 20px 60px -10px rgba(0,0,0,0.7), 0 0 40px -10px hsl(43 80% 45% / 0.3)" }}
               />
@@ -143,7 +144,7 @@ const PricingSection = () => {
               href={HOTMART_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-cta block w-full text-center py-6 text-xl md:text-2xl animate-pulse-gold inline-flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all"
+              className="btn-cta block w-full text-center py-6 text-xl md:text-2xl md:animate-pulse-gold inline-flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all"
             >
               🙏 QUIERO EL CÓDIGO DIVINO
             </a>

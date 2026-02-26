@@ -66,6 +66,7 @@ const IncludesSection = () => {
                   width="754"
                   height="512"
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-56 md:h-64 object-cover rounded-xl"
                   style={{ boxShadow: "var(--shadow-gold)" }}
                 />
