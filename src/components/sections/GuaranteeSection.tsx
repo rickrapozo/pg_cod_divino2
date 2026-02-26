@@ -13,6 +13,8 @@ const GuaranteeSection = () => {
               width="200"
               height="200"
               loading="lazy"
+              decoding="async"
+              sizes="160px"
               className="w-40 md:w-48 mx-auto"
             />
           </div>

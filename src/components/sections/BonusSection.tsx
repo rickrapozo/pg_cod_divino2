@@ -100,6 +100,7 @@ const BonusSection = () => {
                   height="280"
                   loading="lazy"
                   decoding="async"
+                  sizes="160px"
                   className="w-48 md:w-40 object-contain rounded-xl"
                 />
               </div>

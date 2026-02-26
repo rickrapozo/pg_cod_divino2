@@ -57,6 +57,7 @@ const ForWhoSection = () => {
                   height="300"
                   loading="lazy"
                   decoding="async"
+                  sizes="(max-width: 768px) 95vw, 400px"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(20,12,5,0.75) 0%, transparent 60%)" }} />

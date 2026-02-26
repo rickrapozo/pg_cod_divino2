@@ -91,6 +91,7 @@ const PricingSection = () => {
                 height="683"
                 loading="lazy"
                 decoding="async"
+                sizes="(max-width: 768px) 80vw, 384px"
                 className="w-full max-w-sm rounded-2xl relative"
                 style={{ boxShadow: "0 20px 60px -10px rgba(0,0,0,0.7), 0 0 40px -10px hsl(43 80% 45% / 0.3)" }}
               />
@@ -161,7 +162,7 @@ const PricingSection = () => {
             </div>
 
             <p className="font-body text-[10px] font-black uppercase tracking-[0.25em] text-gold-light mb-4 relative z-10 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold-light animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-gold-light md:animate-pulse" />
               LA OFERTA TERMINA EN:
             </p>
 
@@ -189,7 +190,7 @@ const PricingSection = () => {
             </div>
 
             <p className="font-body text-[10px] font-black uppercase tracking-[0.25em] text-emerald-light mb-4 relative z-10 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-light animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-light md:animate-pulse" />
               DISPONIBILIDAD:
             </p>
 

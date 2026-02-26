@@ -80,7 +80,7 @@ const InstagramDM = ({ name, handle, avatarColor, initial, time, message }: type
                 </div>
             </div>
             <div className="ml-8 text-left">
-                <Heart className="w-4 h-4 text-rose-500 fill-rose-500 animate-pulse" />
+                <Heart className="w-4 h-4 text-rose-500 fill-rose-500 md:animate-pulse" />
             </div>
         </div>
 
